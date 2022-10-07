@@ -1,0 +1,30 @@
+{
+	"clusters": [
+		{
+			"vk": {
+				"token": "2670ca35a327c51c0e450e80c71fd8bf0a48bc9fdcd9f3f8917c8dbf754b4d58df6cbb1c61f0ca6135df8",
+				"group_id": "206150065",
+				"keywords": [],
+				"words_blacklist": [],
+				"filter": false,
+				"donut": false,
+				"ads": false,
+				"interval": 30
+			},
+			"discord": {
+				"webhook_urls": [
+					"https://discord.com/api/webhooks/966423067771412480/FwMwTmj05xke0zak-3JBo22000qNa8er5MsU-lQU0eHQN0eHHZUTrfk7Os-lWEgqN5il"
+				],
+				"username": "World of Colonization",
+				"avatar_url": "https://cdn.discordapp.com/avatars/955189437275467798/9949d32ffa9b2776d8788a422f6a184d.png?size=4096",
+				"content": "",
+				"color": "#0xFF0080",
+				"author": true,
+				"copyright": true,
+				"date": true,
+				"exclude_content": []
+			}
+		}
+	],
+	"version_dont_modify_me": 5
+}

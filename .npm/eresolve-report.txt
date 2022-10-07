@@ -1,0 +1,351 @@
+# npm resolution error report
+
+2022-07-01T14:11:06.678Z
+
+While resolving: @typescript-eslint/eslint-plugin@4.33.0
+Found: eslint@8.2.0
+node_modules/eslint
+  dev eslint@"^8.2.0" from the root project
+  peer eslint@"*" from @typescript-eslint/experimental-utils@4.33.0
+  node_modules/@typescript-eslint/experimental-utils
+    @typescript-eslint/experimental-utils@"4.33.0" from @typescript-eslint/eslint-plugin@4.33.0
+    node_modules/@typescript-eslint/eslint-plugin
+      dev @typescript-eslint/eslint-plugin@"^4.22.1" from the root project
+  peer eslint@">=5" from eslint-utils@3.0.0
+  node_modules/eslint-utils
+    eslint-utils@"^3.0.0" from @typescript-eslint/experimental-utils@4.33.0
+    node_modules/@typescript-eslint/experimental-utils
+      @typescript-eslint/experimental-utils@"4.33.0" from @typescript-eslint/eslint-plugin@4.33.0
+      node_modules/@typescript-eslint/eslint-plugin
+        dev @typescript-eslint/eslint-plugin@"^4.22.1" from the root project
+    eslint-utils@"^3.0.0" from eslint@8.2.0
+
+Could not resolve dependency:
+peer eslint@"^5.0.0 || ^6.0.0 || ^7.0.0" from @typescript-eslint/eslint-plugin@4.33.0
+node_modules/@typescript-eslint/eslint-plugin
+  dev @typescript-eslint/eslint-plugin@"^4.22.1" from the root project
+
+Conflicting peer dependency: eslint@7.32.0
+node_modules/eslint
+  peer eslint@"^5.0.0 || ^6.0.0 || ^7.0.0" from @typescript-eslint/eslint-plugin@4.33.0
+  node_modules/@typescript-eslint/eslint-plugin
+    dev @typescript-eslint/eslint-plugin@"^4.22.1" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "edge": {
+    "type": "peer",
+    "name": "eslint",
+    "spec": "^5.0.0 || ^6.0.0 || ^7.0.0",
+    "error": "INVALID",
+    "from": {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "4.33.0",
+      "location": "node_modules/@typescript-eslint/eslint-plugin",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "dev",
+          "name": "@typescript-eslint/eslint-plugin",
+          "spec": "^4.22.1",
+          "from": {
+            "location": "/home/container"
+          }
+        }
+      ]
+    }
+  },
+  "dep": {
+    "name": "eslint",
+    "version": "7.32.0",
+    "whileInstalling": {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "4.33.0",
+      "path": "/home/container/node_modules/@typescript-eslint/eslint-plugin"
+    },
+    "location": "node_modules/eslint",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "peer",
+        "name": "eslint",
+        "spec": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "error": "INVALID",
+        "from": {
+          "name": "@typescript-eslint/eslint-plugin",
+          "version": "4.33.0",
+          "location": "node_modules/@typescript-eslint/eslint-plugin",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "dev",
+              "name": "@typescript-eslint/eslint-plugin",
+              "spec": "^4.22.1",
+              "from": {
+                "location": "/home/container"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "current": {
+    "name": "eslint",
+    "version": "8.2.0",
+    "location": "node_modules/eslint",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "dev",
+        "name": "eslint",
+        "spec": "^8.2.0",
+        "from": {
+          "location": "/home/container"
+        }
+      },
+      {
+        "type": "peer",
+        "name": "eslint",
+        "spec": "*",
+        "from": {
+          "name": "@typescript-eslint/experimental-utils",
+          "version": "4.33.0",
+          "location": "node_modules/@typescript-eslint/experimental-utils",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@typescript-eslint/experimental-utils",
+              "spec": "4.33.0",
+              "from": {
+                "name": "@typescript-eslint/eslint-plugin",
+                "version": "4.33.0",
+                "location": "node_modules/@typescript-eslint/eslint-plugin",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "dev",
+                    "name": "@typescript-eslint/eslint-plugin",
+                    "spec": "^4.22.1",
+                    "from": {
+                      "location": "/home/container"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "peer",
+        "name": "eslint",
+        "spec": ">=5",
+        "from": {
+          "name": "eslint-utils",
+          "version": "3.0.0",
+          "location": "node_modules/eslint-utils",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "eslint-utils",
+              "spec": "^3.0.0",
+              "from": {
+                "name": "@typescript-eslint/experimental-utils",
+                "version": "4.33.0",
+                "location": "node_modules/@typescript-eslint/experimental-utils",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "prod",
+                    "name": "@typescript-eslint/experimental-utils",
+                    "spec": "4.33.0",
+                    "from": {
+                      "name": "@typescript-eslint/eslint-plugin",
+                      "version": "4.33.0",
+                      "location": "node_modules/@typescript-eslint/eslint-plugin",
+                      "isWorkspace": false,
+                      "dependents": [
+                        {
+                          "type": "dev",
+                          "name": "@typescript-eslint/eslint-plugin",
+                          "spec": "^4.22.1",
+                          "from": {
+                            "location": "/home/container"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "prod",
+              "name": "eslint-utils",
+              "spec": "^3.0.0",
+              "from": {
+                "name": "eslint",
+                "version": "8.2.0"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "peerConflict": {
+    "current": {
+      "name": "eslint",
+      "version": "8.2.0",
+      "location": "node_modules/eslint",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "dev",
+          "name": "eslint",
+          "spec": "^8.2.0",
+          "from": {
+            "location": "/home/container"
+          }
+        },
+        {
+          "type": "peer",
+          "name": "eslint",
+          "spec": "*",
+          "from": {
+            "name": "@typescript-eslint/experimental-utils",
+            "version": "4.33.0",
+            "location": "node_modules/@typescript-eslint/experimental-utils",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@typescript-eslint/experimental-utils",
+                "spec": "4.33.0",
+                "from": {
+                  "name": "@typescript-eslint/eslint-plugin",
+                  "version": "4.33.0",
+                  "location": "node_modules/@typescript-eslint/eslint-plugin",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "dev",
+                      "name": "@typescript-eslint/eslint-plugin",
+                      "spec": "^4.22.1",
+                      "from": {
+                        "location": "/home/container"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "peer",
+          "name": "eslint",
+          "spec": ">=5",
+          "from": {
+            "name": "eslint-utils",
+            "version": "3.0.0",
+            "location": "node_modules/eslint-utils",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "eslint-utils",
+                "spec": "^3.0.0",
+                "from": {
+                  "name": "@typescript-eslint/experimental-utils",
+                  "version": "4.33.0",
+                  "location": "node_modules/@typescript-eslint/experimental-utils",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "prod",
+                      "name": "@typescript-eslint/experimental-utils",
+                      "spec": "4.33.0",
+                      "from": {
+                        "name": "@typescript-eslint/eslint-plugin",
+                        "version": "4.33.0",
+                        "location": "node_modules/@typescript-eslint/eslint-plugin",
+                        "isWorkspace": false,
+                        "dependents": [
+                          {
+                            "type": "dev",
+                            "name": "@typescript-eslint/eslint-plugin",
+                            "spec": "^4.22.1",
+                            "from": {
+                              "location": "/home/container"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "prod",
+                "name": "eslint-utils",
+                "spec": "^3.0.0",
+                "from": {
+                  "name": "eslint",
+                  "version": "8.2.0"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "peer": {
+      "name": "eslint",
+      "version": "7.32.0",
+      "whileInstalling": {
+        "name": "@typescript-eslint/eslint-plugin",
+        "version": "4.33.0",
+        "path": "/home/container/node_modules/@typescript-eslint/eslint-plugin"
+      },
+      "location": "node_modules/eslint",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "peer",
+          "name": "eslint",
+          "spec": "^5.0.0 || ^6.0.0 || ^7.0.0",
+          "error": "INVALID",
+          "from": {
+            "name": "@typescript-eslint/eslint-plugin",
+            "version": "4.33.0",
+            "location": "node_modules/@typescript-eslint/eslint-plugin",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "dev",
+                "name": "@typescript-eslint/eslint-plugin",
+                "spec": "^4.22.1",
+                "from": {
+                  "location": "/home/container"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false,
+  "isMine": true
+}

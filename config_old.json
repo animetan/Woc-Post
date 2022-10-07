@@ -1,0 +1,30 @@
+{
+	"clusters": [
+		{
+			"vk": {
+				"token": "vk1.a.qf8ZV_UIlmALf5Bb9YPCxunjC3TTIEdFeEV5dS97dBQXNUJdZfr4UpCnO032iz3aEzhtlzK4FtjOljK4_nakeDmf78WS1O3ErdVfCr_3Ox4qVDQ4kpkwefFRBt903KgWyzipBZUPgBljImC47vBNC3bfS4eNIBElsMaUJtQvnSrvmJ9VRibbLBgPEJlMG-cT",
+				"group_id": "212819246",
+				"keywords": [],
+				"words_blacklist": [],
+				"filter": false,
+				"donut": false,
+				"ads": false,
+				"longpoll": false,
+				"interval": 0
+			},
+			"discord": {
+				"webhook_urls": [
+					"https://discord.com/api/webhooks/988037221540057168/s1E6tPanNzdh9D3X8vzpCzw3KX2y8vqXoYfbL667xsPZH6DF71ggNgxoxmqK3Smj4dP5"
+				],
+				"username": "Spidey Bot",
+				"avatar_url": "",
+				"content": "f",
+				"color": "#aabbcc",
+				"author": true,
+				"copyright": true
+			}
+		}
+	],
+	"version_dont_modify_me": 4
+}
+
